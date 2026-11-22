@@ -44,7 +44,5 @@ def create_admin_user(app):
 
 if __name__ == "__main__":
     app = create_app()
-
     create_tables(app)
-
     create_admin_user(app)

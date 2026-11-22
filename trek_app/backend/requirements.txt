@@ -1,3 +1,14 @@
+# requirements.txt
+# All Python packages needed for the backend.
+# Install with: pip install -r requirements.txt
+#
+# Packages added per milestone:
+#   Milestone 1 : Flask, Flask-SQLAlchemy, Werkzeug
+#   Milestone 2 : Flask-JWT-Extended        (added now)
+#   Milestone 7 : Flask-Caching, redis      (added then)
+#   Milestone 8 : celery                    (added then)
+
 Flask==3.0.3
 Flask-SQLAlchemy==3.1.1
+Flask-JWT-Extended==4.6.0
 Werkzeug==3.0.3

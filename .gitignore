@@ -1,0 +1,26 @@
+# .gitignore
+# Files and folders that should NOT be committed to git.
+
+# Python bytecode cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment folder
+venv/
+env/
+
+# SQLite database file (contains real data - do not commit)
+*.db
+
+# Environment variable files (contain secrets)
+.env
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+
+test_db.py
