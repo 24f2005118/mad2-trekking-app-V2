@@ -30,8 +30,10 @@ def create_app():
     app.before_request(handle_options_requests)
     app.after_request(add_cors_headers)
 
-    from routes.auth_routes import auth_bp
-    app.register_blueprint(auth_bp, url_prefix='/api')
+    from routes.auth_routes  import auth_bp
+    from routes.admin_routes import admin_bp
+    app.register_blueprint(auth_bp,  url_prefix='/api')
+    app.register_blueprint(admin_bp, url_prefix='/api/admin')
 
     return app
 
